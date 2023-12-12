@@ -26,7 +26,8 @@
 nav {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20px;
+  align-items: center;
+  margin-bottom: 30px;
 }
 
 nav .circle {
@@ -37,6 +38,14 @@ nav .circle {
   background: white;
   color: rgb(78, 47, 123);
   box-shadow: 0 5px 10px rgba(136, 91, 203, 0.272);
+  cursor: pointer;
+}
+
+nav h2 {
+  color: #ddd;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.25px;
 }
 
 #thumbnail {
@@ -48,7 +57,7 @@ nav .circle {
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 35px;
   margin: 15px 0 5px;
 }
 
@@ -95,6 +104,11 @@ p {
   background: white;
   box-shadow: 0 5px 10px rgba(136, 91, 203, 0.272);
   cursor: pointer;
+  transition: 0.2s;
+}
+
+.controls div:hover {
+  transform: scale(1.1);
 }
 
 .controls div:nth-child(2) {
@@ -103,7 +117,13 @@ p {
   color: white;
 }
 
+.controls div:nth-child(2):hover {
+  transform: scale(1.6);
+}
+
 span.media {
   font-size: 12px;
   line-height: 60px;
+  color: rgba(32, 10, 65, 0.406);
+  cursor: default;
 }
